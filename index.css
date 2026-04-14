@@ -1,0 +1,23 @@
+/* index.css */
+.texto-pulsante-not-color {
+  display: block;      /* Garante que ocupe a linha toda */
+  text-align: center;  /* Centraliza o texto horizontalmente */
+  margin: 0 auto;      /* Garante margens automáticas */
+  font-size: 550%;
+}
+.texto-pulsante {
+  display: block;      /* Garante que ocupe a linha toda */
+  text-align: center;  /* Centraliza o texto horizontalmente */
+  margin: 0 auto;      /* Garante margens automáticas */
+  font-size: 450%;
+  
+  /* Mantendo a sua animação anterior */
+  color: #000000;
+  font-weight: bold;
+  animation: troca-cor-estavel 1.5s infinite ease-in-out;
+}
+
+@keyframes troca-cor-estavel {
+  0%, 100% { color: #000000; }
+  50% { color: #ff0000; text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
+}
